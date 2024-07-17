@@ -28,10 +28,10 @@
 <script src="jquery.marquee.min.js"></script>
 <script>
     $(function() {
-        $("#marqueeLeft").marquee();
+        $("#marquee").marquee();
 
         // 或者
-        $("#marqueeLeft").marquee({
+        $("#marquee").marquee({
             direction: 'left' // 'left', 'right', 'up', 'down'。默认： 'left'
             speed: 20, // 滚动速度，越大越慢，单位毫秒。 默认： 20
             loop: true, // 是否循环滚动，默认：true
