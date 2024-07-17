@@ -1,5 +1,7 @@
 # 基于jQuery的无缝滚动
 
+<a href="https://th74100.github.io/jquery.marquee/">Demo</a>
+
 ## 结构
 ```html
 <div id="marquee">
@@ -39,4 +41,3 @@
     })
 </script>
 ```
-<a href="https://th74100.github.io/jquery.marquee/">Demo</a>
