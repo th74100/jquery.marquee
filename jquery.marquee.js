@@ -1,7 +1,7 @@
 ;(function($) {
     $.fn.marquee = function(config) {
-        var step = 1;
-        var options = $.extend({}, $.fn.marquee.defaults, config);
+        var step = 1; // 移动的步长
+        var options = $.extend({}, $.fn.marquee.defaults, config); // 合并对象
         return this.each(function() {
             // 滚动元素容器
             var $marquee = $(this);
@@ -121,7 +121,7 @@
             // 初始化
             $marqueeTimer = setInterval(scrollInit, options.speed);
             
-            // 输入移入，停止滚动。移出恢复滚动
+            // 鼠标移入，停止滚动。移出恢复滚动
             if(options.pausehover) {
                 $marquee.hover(function() {
                     clearInterval($marqueeTimer);
