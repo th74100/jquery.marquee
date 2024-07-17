@@ -39,3 +39,4 @@
     })
 </script>
 ```
+<a href="https://th74100.github.io/jquery.marquee/">Demo</a>
