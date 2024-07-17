@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 15px;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        /*左滚动*/
+        .marquee {
+            margin: 0 auto;
+            width: 1200px;
+            overflow: hidden;
+        }
+
+        .marquee h2 {
+            margin-bottom: 20px;
+        }
+
+        .marquee ul.flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .marquee ul.flex li {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            line-height: 150px;
+            text-align: center;
+            font-size: 38px;
+            color: #fff;
+            background-image:linear-gradient(135deg,#52E5E7 15%,#130CB7 100%)
+        }
+
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-h {
+            
+            overflow: hidden;
+        }
+
+        .marquee-h .marquee-wrapper {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .marquee-h ul li {
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 38px;
+            background-image:linear-gradient(#1e3c72 ,#2a5298 100%)
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <h2>左滚动</h2>
+        <div class="marquee-wrapper" id="marqueeLeft">
+            <ul class="flex">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="marquee">
+        <h2>右滚动</h2>
+        <div class="marquee-wrapper" id="marqueeRight">
+            <ul class="flex">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="marquee marquee-h">
+        <h2>上滚动</h2>
+        <div class="marquee-wrapper" id="marqueeUP">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div class="marquee marquee-h">
+        <h2>下滚动</h2>
+        <div class="marquee-wrapper" id="marqueeDown">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ul>
+        </div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery.marquee.min.js"></script>
+    <script>
+        $(function() {
+            $("#marqueeLeft").marquee();
+            
+            $("#marqueeRight").marquee({
+                direction: 'right',
+                speed: 15,
+                spaceBetween: 15,
+                pausehover: true
+            });
+            
+            $("#marqueeUP").marquee({
+                direction: 'up',
+                pausehover: true
+            });
+
+            $("#marqueeDown").marquee({
+                direction: 'down'
+            })
+        });
+    </script>
+</body>
+</html>
