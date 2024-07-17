@@ -134,7 +134,7 @@
     
     $.fn.marquee.defaults = {
         direction: 'left', // 滚动方向
-        speed: 20, // 滚动速度，越大越慢，单位秒
+        speed: 20, // 滚动速度，越大越慢，单位毫秒
         loop: true, // 是否循环滚动
         pausehover: false, // 鼠标经过是否暂停滚动
         spaceBetween: 10 // 元素之间的间距
