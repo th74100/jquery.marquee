@@ -1,6 +1,6 @@
 # 基于jQuery的无缝滚动
 
-<a href="https://th74100.github.io/jquery.marquee/">Demo</a>
+<a href="https://th74100.github.io/jquery.marquee/" target="_blank">Demo</a>
 
 ## 结构
 ```html
