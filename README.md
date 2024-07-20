@@ -5,7 +5,7 @@
 ## 结构
 ```html
 <div id="marquee">
-    <ul class="flex">
+    <ul>
         <li>1</li>
         <li>2</li>
         <li>3</li>
